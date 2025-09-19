@@ -1,21 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mio</title>
+    <title>Mio - Katten min</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>Katten min Mio</h1>
-    <p>han er 8 år gamen feit oransj katt som elsker å bite meg hvist jeg ikke gir han matt</p>
-    <img src="{{ url_for('static', filename='images/mio1.jpeg') }}" alt="Mio" width="600">
-    <img src="{{ url_for('static', filename='images/mio2.jpeg') }}" alt="Mio" width="600">
-    <img src="{{ url_for('static', filename='images/mio3.jpeg') }}" alt="Mio" width="600">
-    <img src="{{ url_for('static', filename='images/mio4.jpeg') }}" alt="Mio" width="600">
-    <img src="{{ url_for('static', filename='images/mio5.jpeg') }}" alt="Mio" width="600">
-    <img src="{{ url_for('static', filename='images/mio6.jpeg') }}" alt="Mio" width="600">
-    <img src="{{ url_for('static', filename='images/mio7.jpeg') }}" alt="Mio" width="600">
-    <img src="{{ url_for('static', filename='images/mio8.jpeg') }}" alt="Mio" width="600">
-
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Nikolai's Side</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/">Hjem</a></li>
+                <li class="nav-item"><a href="/ommeg">Om meg</a></li>
+                <li class="nav-item"><a href="/mio" class="active">Mio</a></li>
+                <li class="nav-item"><a href="/audun">Audun</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="content-card">
+            <h1>Katten min Mio</h1>
+            <p>Han er 8 år gammel, feit oransj katt som elsker å bite meg hvis jeg ikke gir han mat. Mio er en veldig spesiell katt med mye personlighet!</p>
+            
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="{{ url_for('static', filename='images/mio1.jpeg') }}" alt="Mio">
+                </div>
+                <div class="image-item">
+                    <img src="{{ url_for('static', filename='images/mio2.jpeg') }}" alt="Mio">
+                </div>
+                <div class="image-item">
+                    <img src="{{ url_for('static', filename='images/mio3.jpeg') }}" alt="Mio">
+                </div>
+                <div class="image-item">
+                    <img src="{{ url_for('static', filename='images/mio4.jpeg') }}" alt="Mio">
+                </div>
+                <div class="image-item">
+                    <img src="{{ url_for('static', filename='images/mio5.jpeg') }}" alt="Mio">
+                </div>
+                <div class="image-item">
+                    <img src="{{ url_for('static', filename='images/mio6.jpeg') }}" alt="Mio">
+                </div>
+                <div class="image-item">
+                    <img src="{{ url_for('static', filename='images/mio7.jpeg') }}" alt="Mio">
+                </div>
+                <div class="image-item">
+                    <img src="{{ url_for('static', filename='images/mio8.jpeg') }}" alt="Mio">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

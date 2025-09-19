@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audun</title>
+    <title>Audun - Min venn</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>
-        Audun
-    </h1>
-    <p>Audun audun audun. hva er ikke audn eller som shake spear en gang sa "to be audun or not to be audun, thats the question". </p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Nikolai's Side</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/">Hjem</a></li>
+                <li class="nav-item"><a href="/ommeg">Om meg</a></li>
+                <li class="nav-item"><a href="/mio">Mio</a></li>
+                <li class="nav-item"><a href="/audun" class="active">Audun</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="content-card">
+            <h1>Audun</h1>
+            <p>Audun audun audun. Hva er ikke Audun? Som Shakespeare en gang sa: "To be Audun or not to be Audun, that is the question."</p>
+            <p>Audun er en fantastisk venn som alltid er der når jeg trenger ham. Han har en unik måte å se verden på som gjør hver dag interessant.</p>
+        </div>
+    </div>
 </body>
 </html>

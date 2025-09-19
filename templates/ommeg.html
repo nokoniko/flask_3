@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om meg</title>
+    <title>Om meg - Nikolai</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>
-        OM meg
-    </h1>
-    <p>
-        jeg heter Nikolai og dette er noe jeg liker å gjøre
-        <ul>
-            <li>Spille spill som minecraft eller noen random spill på steam som</li>
-            <li>Ligge i sengen å gjøre ingenting etter skole</li>
-            <li>kose <a href="/mio">mio</a></li>
-        </ul>
-    </p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Nikolai's Side</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/">Hjem</a></li>
+                <li class="nav-item"><a href="/ommeg" class="active">Om meg</a></li>
+                <li class="nav-item"><a href="/mio">Mio</a></li>
+                <li class="nav-item"><a href="/audun">Audun</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="content-card">
+            <h1>Om meg</h1>
+            <p>Jeg heter Nikolai og dette er noe jeg liker å gjøre:</p>
+            <ul style="margin-left: 20px; font-size: 1.1rem; line-height: 1.8;">
+                <li>Spille spill som Minecraft eller noen random spill på Steam</li>
+                <li>Ligge i sengen å gjøre ingenting etter skole</li>
+                <li>Kose <a href="/mio" style="color: #667eea; text-decoration: none;">Mio</a> - min fantastiske katt</li>
+            </ul>
+            <p>Jeg er glad i teknologi og lærer alltid nye ting. Denne nettsiden er et eksempel på det!</p>
+        </div>
+    </div>
 </body>
 </html>

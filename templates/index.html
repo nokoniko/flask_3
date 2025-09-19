@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hjemmeside</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>Litt om nettsiden</h1>
-    <p>Dette er min første Flask netttside så her har jeg bare noen andre filer dere kan se på</p>
-    <ul>
-        <li><a href="/om">Litt om meg</a></li>
-        <li><a href="/mio">Om katten min</a></li>
-        <li><a href="/audun">Litt om min autisitkse venn audun</a></li>
-    </ul>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Nikolai's Side</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/" class="active">Hjem</a></li>
+                <li class="nav-item"><a href="/ommeg">Om meg</a></li>
+                <li class="nav-item"><a href="/mio">Mio</a></li>
+                <li class="nav-item"><a href="/audun">Audun</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="content-card">
+            <h1>Velkommen til min nettside!</h1>
+            <p>Dette er min første Flask netttside så her har jeg bare noen andre filer dere kan se på. Utforsk sidene mine for å lære mer om meg, katten min Mio, og min venn Audun.</p>
+            <a href="/ommeg" class="btn">Les mer om meg</a>
+        </div>
+    </div>
 </body>
 </html> 
